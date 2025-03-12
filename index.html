@@ -228,6 +228,43 @@
             </td>
           </tr>
 
+	  	  
+	  <tr onmouseout="guiwolrd_stop()" onmouseover="guiwolrd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='guiwolrd_image'>
+                  <img src='images/guiwolrd.jpg' width="220"></div>
+                <img src='images/guiwolrd.jpg' width="220">
+              </div>
+              <script type="text/javascript">
+                function guiwolrd_start() {
+                  document.getElementById('guiwolrd_image').style.opacity = "1";
+                }
+
+                function guiwolrd_stop() {
+                  document.getElementById('guiwolrd_image').style.opacity = "0";
+                }
+                guiwolrd_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://et-seed.github.io/"> -->
+              <papertitle> GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding
+              </papertitle>
+              </a>
+              <br>
+              Dongping Chen, Yue Huang, Siyuan Wu, Jingyu Tang, <strong>Huichi Zhou<strong>, Qihui Zhang, Zhigang He, Yilin Bai, Chujie Gao, Liuyi Chen, Yiqiang Li, Chenlong Wang, Yue Yu, Tianshuo Zhou, Zhen Li, Yi Gui, Yao Wan, Pan Zhou, Jianfeng Gao, Lichao Sun
+              <br>
+              <em>ICLR 2025</em>
+              <br> 
+              <a href="https://openreview.net/forum?id=QarKTT5brZ">paper</a>
+              /
+              <a href="https://github.com/Dongping-Chen/GUI-World">code</a>
+              <p></p>
+              <p> GUI-WORLD is a comprehensive video-based benchmark and dataset designed for GUI-oriented multimodal understanding. It includes 12,379 GUI videos covering six scenarios (e.g., software, websites, mobile, XR) and eight question types. The dataset captures dynamic and sequential GUI content, addressing challenges faced by existing models. The paper introduces GUI-VID, a fine-tuned Video LLM that improves dynamic GUI understanding but highlights that current models still struggle with complex GUI tasks.  </p>
+            </td>
+          </tr>
 	
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
