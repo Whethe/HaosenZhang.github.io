@@ -100,6 +100,50 @@
 
 
 	  
+	  <tr onmouseout="_stop()" onmouseover="llm4rgnn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='llm4rgnn_image'>
+                  <img src='images/llm4rgnn.jpg' width="220"></div>
+                <img src='images/llm4rgnn.jpg' width="220">
+              </div>
+              <script type="text/javascript">
+                function llm4rgnn_start() {
+                  document.getElementById('llm4rgnn_image').style.opacity = "1";
+                }
+
+                function llm4rgnn_stop() {
+                  document.getElementById('llm4rgnn_image').style.opacity = "0";
+                }
+                llm4rgnn_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://et-seed.github.io/"> -->
+              <papertitle> Can Large Language Models Improve the Adversarial Robustness of Graph Neural Networks?
+              </papertitle>
+              </a>
+              <br>
+              Zhongjian Zhang*, 
+              Xiao Wang*, 
+              <strong>Huichi Zhou</strong>, 
+              Mengmei Zhang,
+              Cheng Yang, 
+              Chuan Shi
+              <br>
+              <em>KDD 2025 Research Track</em>
+              <br> 
+              <a href="https://arxiv.org/pdf/2408.08685">paper</a>
+              /
+              <a href="https://github.com/zhongjian-zhang/LLM4RGNN">code</a>
+              <p></p>
+              <p> LLM4RGNN is a framework that enhances the adversarial robustness of Graph Neural Networks (GNNs) using Large Language Models (LLMs). It distills the inference capability of GPT-4 into a local LLM to identify malicious edges and trains an LM-based edge predictor to find missing important edges. By removing malicious edges and adding important ones, LLM4RGNN significantly improves GNN performance under adversarial attacks, outperforming existing robust GNN frameworks in various datasets and attack scenarios.  </p>
+            </td>
+          </tr>
+
+
+	  
 	  <tr onmouseout="avllm_stop()" onmouseover="avllm_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -109,13 +153,13 @@
               </div>
               <script type="text/javascript">
                 function avllm_start() {
-                  document.getElementById('trustrag_image').style.opacity = "1";
+                  document.getElementById('avllm_image').style.opacity = "1";
                 }
 
                 function avllm_stop() {
-                  document.getElementById('trustrag_image').style.opacity = "0";
+                  document.getElementById('avllm_image').style.opacity = "0";
                 }
-                trustrag_stop()
+                avllm_stop()
               </script>
             </td>
 
@@ -127,7 +171,7 @@
               <br>
               <strong>Huichi Zhou*</strong>, 
               Zhaoyang Wang*, 
-              Hongtao Wang*, 
+              Hongtao Wang, 
               Dongping Chen,
               Wenhan Mu, 
               Fangyuan Zhang
@@ -141,7 +185,6 @@
               <p> AVLLM is a framework for evaluating and improving the validity of word-level adversarial attacks on LLMs. It fine-tunes a lightweight LLM to provide a validity score and explanation, helping to generate semantically consistent adversarial examples. AVLLM improves attack quality and consistency through enhanced semantic understanding.  </p>
             </td>
           </tr>
-
 
 	
 
