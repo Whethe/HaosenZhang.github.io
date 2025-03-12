@@ -132,7 +132,7 @@
               Chetan Bansal,
               Huaxiu Yao
               <br>
-              <em>Under Review</em>
+              <em>NAACL 2025 Findings</em>
               <br> 
               <a href="https://arxiv.org/pdf/2502.04498">paper</a>
               /
@@ -265,7 +265,45 @@
               <p> GUI-WORLD is a comprehensive video-based benchmark and dataset designed for GUI-oriented multimodal understanding. It includes 12,379 GUI videos covering six scenarios (e.g., software, websites, mobile, XR) and eight question types. The dataset captures dynamic and sequential GUI content, addressing challenges faced by existing models. The paper introduces GUI-VID, a fine-tuned Video LLM that improves dynamic GUI understanding but highlights that current models still struggle with complex GUI tasks.  </p>
             </td>
           </tr>
-	
+
+
+
+	  <tr onmouseout="mllmjudge_stop()" onmouseover="mllmjudge_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mllmjudge_image'>
+                  <img src='images/mllmjudge.jpg' width="220"></div>
+                <img src='images/mllmjudge.jpg' width="220">
+              </div>
+              <script type="text/javascript">
+                function mllmjudge_start() {
+                  document.getElementById('mllmjudge_image').style.opacity = "1";
+                }
+
+                function guiworld_stop() {
+                  document.getElementById('mllmjudge_image').style.opacity = "0";
+                }
+                mllmjudge_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://et-seed.github.io/"> -->
+              <papertitle> MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark
+              </papertitle>
+              </a>
+              <br>
+		Dongping Chen*, Ruoxi Chen*, Shilin Zhang*, Yaochen Wang*, Yinuo Liu*,  <strong>Huichi Zhou*<\strong>, Qihui Zhang*, Yao Wan, Pan Zhou, Lichao Sun
+              <br>
+              <em>ICML 2025 Oral</em>
+              <br> 
+              <a href="https://openreview.net/pdf?id=dbFEFHAD79">paper</a>
+              /
+              <a href="https://github.com/Dongping-Chen/MLLM-Judge">code</a>
+              <p></p>
+              <p> MLLM-as-a-Judge is a benchmark designed to evaluate the judging capabilities of Multimodal Large Language Models (MLLMs) in vision-language tasks. It assesses MLLMs on Scoring Evaluation, Pair Comparison, and Batch Ranking across 14 datasets. Results show that while MLLMs align well with human judgments in pair comparison, they struggle with scoring and batch ranking due to biases and hallucinations. GPT-4V performs best, but the study highlights the need for improvements in consistency and reasoning.  </p>
+            </td>
+          </tr>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
