@@ -77,10 +77,10 @@
               </papertitle>
               </a>
               <br>
-              Huichi Zhou*, 
+              <strong>Huichi Zhou*</strong>,
               Kin-Hei Lee*, 
               Zhonghao Zhan*, 
-              <strong>Yue Chen</strong>,
+              Yue Chen,
               Zhenhao Li, 
               Zhaoyang Wang,
               Hamed Haddadi, 
@@ -100,19 +100,19 @@
 
 
 	  
-	  <tr onmouseout="trustrag_stop()" onmouseover="trustrag_start()">
+	  <tr onmouseout="avllm_stop()" onmouseover="avllm_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='trustrag_image'>
-                  <img src='images/trustrag.jpg' width="220"></div>
-                <img src='images/trustrag.jpg' width="220">
+                <div class="two" id='avllm_image'>
+                  <img src='images/avllm.jpg' width="220"></div>
+                <img src='images/avllm.jpg' width="220">
               </div>
               <script type="text/javascript">
-                function trustrag_start() {
+                function avllm_start() {
                   document.getElementById('trustrag_image').style.opacity = "1";
                 }
 
-                function trustrag_stop() {
+                function avllm_stop() {
                   document.getElementById('trustrag_image').style.opacity = "0";
                 }
                 trustrag_stop()
@@ -121,28 +121,24 @@
 
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://et-seed.github.io/"> -->
-              <papertitle> TrustRAG: Enhancing Robustness and Trustworthiness in RAG
+              <papertitle> Evaluating the Validity of Word-level Adversarial Attacks with Large Language Models
               </papertitle>
               </a>
               <br>
-              Huichi Zhou*, 
-              Kin-Hei Lee*, 
-              Zhonghao Zhan*, 
-              <strong>Yue Chen</strong>,
-              Zhenhao Li, 
-              Zhaoyang Wang,
-              Hamed Haddadi, 
-              Emine Yilmaz
+              <strong>Huichi Zhou*</strong>, 
+              Zhaoyang Wang*, 
+              Hongtao Wang*, 
+              Dongping Chen,
+              Wenhan Mu, 
+              Fangyuan Zhang
               <br>
-              <em>Under Review</em>
+              <em>ACL 2024 Findings</em>
               <br> 
-              <a href="https://trust-rag.github.io/">project page</a>
+              <a href="https://aclanthology.org/2024.findings-acl.292">paper</a>
               /
-              <a href="https://arxiv.org/pdf/2501.00879">paper</a>
-              /
-              <a href="https://github.com/HuichiZhou/TrustRAG">code</a>
+              <a href="https://github.com/HuichiZhou/AVLLM">code</a>
               <p></p>
-              <p> We introduce TrustRAG, a robust Retrieval-Augmented Generation (RAG) framework. It defends against corpus poisoning attacks by a two-stage mechanism: identifying potential attack patterns with K-means clustering and detecting malicious docs via self-assessment.  </p>
+              <p> AVLLM is a framework for evaluating and improving the validity of word-level adversarial attacks on LLMs. It fine-tunes a lightweight LLM to provide a validity score and explanation, helping to generate semantically consistent adversarial examples. AVLLM improves attack quality and consistency through enhanced semantic understanding.  </p>
             </td>
           </tr>
 
