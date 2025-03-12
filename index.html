@@ -99,6 +99,48 @@
           </tr>
 
 
+          <tr onmouseout="verify_stop()" onmouseover="verify_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='verify_image'>
+                  <img src='images/verify.jpg' width="220"></div>
+                <img src='images/verify.jpg' width="220">
+              </div>
+              <script type="text/javascript">
+                function verify_start() {
+                  document.getElementById('verify_image').style.opacity = "1";
+                }
+
+                function verify_stop() {
+                  document.getElementById('verify_image').style.opacity = "0";
+                }
+                verify_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://et-seed.github.io/"> -->
+              <papertitle> Verifiable Format Control for Large Language Model Generations
+              </papertitle>
+              </a>
+              <br>
+              Zhaoyang Wang*,
+              Jinqi jiang*, 
+              <strong>Huichi Zhou*</strong>, 
+              Wenhao Zheng,
+              Xuchao Zhang, 
+              Chetan Bansal,
+              Huaxiu Yao
+              <br>
+              <em>Under Review</em>
+              <br> 
+              <a href="https://arxiv.org/pdf/2502.04498">paper</a>
+              /
+              <a href="https://huggingface.co/datasets/jinqij/VFF">code</a>
+              <p></p>
+              <p> We introduce VFF, which is a dataset and training framework that improves the format-following ability of 7B-level LLMs using Python-based verification and progressive training. It enhances LLMs’ ability to follow specific formats (e.g., JSON) through self-generated data and direct preference optimization (DPO).  </p>
+            </td>
+          </tr>
 	  
 	  <tr onmouseout="_stop()" onmouseover="llm4rgnn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
